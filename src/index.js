@@ -19,5 +19,5 @@ dotenv.config({
   });  
   })
 .catch((err)=>{
-console.log("Mongo Connection failed!",err);
+console.log("Mongo Connection failed!",err);    
 });
