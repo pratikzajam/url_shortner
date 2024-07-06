@@ -17,7 +17,18 @@ const createShortUrl = asyncHandler(async (req, res) => {
   const longurlExists = await Url.findOne({ longurl: longurl });
 
   if (longurlExists) {
-    throw new ApiError(400, "url is allready exists");
+    return res
+    .status(200)
+  
+    .json(
+      new ApiResponse(
+        200,
+        {
+        
+        },
+        "url allready exists in the system"
+      )
+    );
   }
 
   if (longurlExists) {
