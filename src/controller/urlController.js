@@ -14,7 +14,15 @@ const createShortUrl = asyncHandler(async (req, res) => {
     throw new ApiError(400, "longurl is required");
   }
 
+  const fullUrl = `${req.protocol}://${req.get('host')}${req.originalUrl}`;
+
   const longurlExists = await Url.findOne({ longurl: longurl });
+
+ const existedshorturl= longurlExists.shorturl;
+
+ var existedshorturlfull=`${fullUrl}${existedshorturl}`;
+  
+  console.log(existedshorturlfull);
 
   if (longurlExists) {
     return res
@@ -24,9 +32,9 @@ const createShortUrl = asyncHandler(async (req, res) => {
       new ApiResponse(
         200,
         {
-        
+          shorturl:existedshorturlfull
         },
-        "url allready exists in the system"
+        "short url allready exists in the system"
       )
     );
   }
@@ -35,7 +43,7 @@ const createShortUrl = asyncHandler(async (req, res) => {
     throw new ApiError(400, "Something went wrong");
   }
 
-  const fullUrl = `${req.protocol}://${req.get('host')}${req.originalUrl}`;
+  
   console.log('Full URL of the server:', fullUrl);
 
 const shorturl = crypto.randomBytes(4).toString('hex'); // Generates an 8-character string
