@@ -17,7 +17,7 @@ This URL shortener web application allows users to shorten long URLs into shorte
 
 - Node.js
 - npm (Node Package Manager)
-- MongoDB (or any other database)
+- MongoDB
 
 ### Steps
 
@@ -45,5 +45,63 @@ This URL shortener web application allows users to shorten long URLs into shorte
    
 5. Access the Web Application: Open a web browser and go to http://localhost:8000 to use the
    URL shortener.
+
+ ### usage
+
+ ## API Endpoints
+
+| Method | Endpoint           | Description                          | Parameters                  |
+|--------|---------------------|--------------------------------------|-----------------------------|
+| `POST` | `/api/shorten`     | Shortens a provided long URL.        | `url` (body parameter)      |
+| `GET`  | `/:shortUrl`       | Redirects to the original URL.       | `shortUrl` (URL parameter)  |
+| `GET`  | `/api/expand`      | Expands a shortened URL back to its original form. | `shortUrl` (query parameter) |
+| `GET`  | `/api/stats/:id`   | Retrieves access count and stats for a specific URL. | `id` (URL parameter)        |
+
+### Example Usage of Endpoints
+
+1. **Shorten a URL**
+   - **Endpoint**: `POST /api/shorten`
+   - **Body**: 
+     ```json
+     {
+       "url": "https://example.com/long-url"
+     }
+     ```
+   - **Response**: 
+     ```json
+     {
+       "shortUrl": "http://localhost:3000/abc123"
+     }
+     ```
+
+2. **Expand a URL**
+   - **Endpoint**: `GET /api/expand?shortUrl=abc123`
+   - **Response**: 
+     ```json
+     {
+       "url": "https://example.com/long-url"
+     }
+     ```
+
+3. **Redirect to Original URL**
+   - **Endpoint**: `GET /abc123`
+   - **Description**: When this endpoint is visited, it redirects the user to the original URL.
+
+4. **Get Access Count and Stats**
+   - **Endpoint**: `GET /api/stats/:id`
+   - **Response**: 
+     ```json
+     {
+       "id": "abc123",
+       "originalUrl": "https://example.com/long-url",
+       "accessCount": 150
+     }
+     ```
+
+
+
+
+
+
 
 
