@@ -88,9 +88,15 @@ This URL shortener web application allows users to shorten long URLs into shorte
 
  ### End Points Screenshots
 
-![Get Endpoint](https://github.com/pratikzajam/url_shortner/blob/master/resources/get.png)
+
+1. Get Endpoint
+
+![Get Endpoint]
+  <img src="https://github.com/pratikzajam/url_shortner/blob/master/resources/get.png" alt="Get Endpoint" width="500"/>
 
 
-![Post Endpoint](https://github.com/pratikzajam/url_shortner/blob/master/resources/post.png)
+2. Post Endpoint
+
+<img src="https://github.com/pratikzajam/url_shortner/blob/master/resources/post.png" alt="Post Endpoint" width="500"/>
 
      
