@@ -35,14 +35,15 @@ This URL shortener web application allows users to shorten long URLs into shorte
 3. Configure Environment Variables: Create a .env file in the root directory and add 
    the following configurations     
    ```sh
-   PORT=3000
+   PORT=8000
    MONGODB_URI=your_mongodb_connection_string
    ```
 4. Run the Application: Start the server by running:  
-   ```sh
+ ```sh
   npm start
-   ```
+ ```
    
 5. Access the Web Application: Open a web browser and go to http://localhost:8000 to use the
    URL shortener.
+
 
