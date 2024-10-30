@@ -23,5 +23,22 @@ This URL shortener web application allows users to shorten long URLs into shorte
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/url-shortener.git
+   git clone https://github.com/pratikzajam/url_shortner.git
    cd url-shortener
+   ```
+
+2. Install Dependencies: Use npm to install all required dependencies:
+   ```sh
+   npm install
+   ```
+
+3. Configure Environment Variables: Create a .env file in the root directory and add 
+   the following configurations     
+   ```
+4. Run the Application: Start the server by running:  
+   ```
+  npm start
+   ```
+5. Access the Web Application: Open a web browser and go to http://localhost:8000 to use the
+   URL shortener.
+

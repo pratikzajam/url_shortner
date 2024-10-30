@@ -91,7 +91,7 @@ const geturl = asyncHandler(async (req, res) => {
 
   const { urlid } = req.params;
 
-  console.log(urlid);
+  // console.log(urlid);
 
 
 
