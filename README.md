@@ -97,6 +97,7 @@ This URL shortener web application allows users to shorten long URLs into shorte
 
 2. Post Endpoint
 
+![Post Endpoint]
 <img src="https://github.com/pratikzajam/url_shortner/blob/master/resources/post.png" alt="Post Endpoint" width="500"/>
 
      
