@@ -42,6 +42,7 @@ This URL shortener web application allows users to shorten long URLs into shorte
    ```sh
   npm start
    ```
+   
 5. Access the Web Application: Open a web browser and go to http://localhost:8000 to use the
    URL shortener.
 
