@@ -59,13 +59,14 @@ This URL shortener web application allows users to shorten long URLs into shorte
 1. **Shorten a URL**
    - **Endpoint**: `POST /api/shorten`
    - **Body**:
-     ```sh
+   ```sh
    {
        "longurl": "https://www.nationalgeographic.com/"
    }
-     ```
+   ```
+ 
    - **Response**:
-     ```sh
+   ```sh
    {
     "statusCode": 200,
     "data": {
@@ -74,16 +75,16 @@ This URL shortener web application allows users to shorten long URLs into shorte
     "message": "short url allready exists in the system",
     "success": true
    }
-     ```
+   ```
 
 2. **Expand a URL**
    - **Endpoint**: `GET "http://www.pratikzajam.tech/2239f2ae" `
    - **Response**: 
-     ```sh
+   ```sh
      {
        "redirects to original url"
      }
-    ```
+   ```
 
  ### End Points Screenshots
 
