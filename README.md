@@ -57,7 +57,7 @@ This URL shortener web application allows users to shorten long URLs into shorte
 ### Example Usage of Endpoints
 
 1. **Shorten a URL**
-   - **Endpoint**: `POST /api/shorten`
+   - **Endpoint**: `POST "http://www.pratikzajam.tech/" `
    - **Body**:
    ```sh
    {
