@@ -8,8 +8,7 @@ This URL shortener web application allows users to shorten long URLs into shorte
 
 - Shorten long URLs
 - Expand shortened URLs
-- Track the number of times a shortened URL has been accessed
-- User-friendly interface
+
 
 ## Installation
 
