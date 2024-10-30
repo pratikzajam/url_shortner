@@ -91,13 +91,13 @@ This URL shortener web application allows users to shorten long URLs into shorte
 
 1. Get Endpoint
 
-![Get Endpoint]
+
   <img src="https://github.com/pratikzajam/url_shortner/blob/master/resources/get.png" alt="Get Endpoint" width="500"/>
 
 
 2. Post Endpoint
 
-![Post Endpoint]
+
 <img src="https://github.com/pratikzajam/url_shortner/blob/master/resources/post.png" alt="Post Endpoint" width="500"/>
 
      
