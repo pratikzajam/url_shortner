@@ -39,9 +39,9 @@ This URL shortener web application allows users to shorten long URLs into shorte
    MONGODB_URI=your_mongodb_connection_string
    ```
 4. Run the Application: Start the server by running:  
- ```sh
-  npm start
- ```
+   ```sh
+   npm start
+   ```
    
 5. Access the Web Application: Open a web browser and go to http://localhost:8000 to use the
    URL shortener.
